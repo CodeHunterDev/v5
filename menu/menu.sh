@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/Andyyuda/permission/main/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/Sandhj/permission/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -19,7 +19,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/Andyyuda/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Sandhj/permission/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -36,7 +36,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Andyyuda/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Sandhj/permission/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -54,7 +54,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/Andyyuda/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/Sandhj/permission/main/ip | grep $MYIP | awk '{print $3}')
 fi
 
 # =========================================
@@ -271,53 +271,58 @@ echo -e "${BIYellow}□ Time Reboot VPS     = 00:00 ${GREEN}( Jam 12 Malam )${NC
 echo -e "${BIYellow}□ License Limit       = ORDER ${GREEN}( 082131861788 )${NC}"
 echo -e "${BIYellow}□ AutoScript By Dev   = Wak ${GREEN}( AndyYuda )${NC}"
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "                                                                    "
-echo -e "░█████╗░███╗░░██╗██████╗░██╗░░░██╗██╗░░░██╗██╗░░░██╗██████╗░░█████╗░"
-echo -e "██╔══██╗████╗░██║██╔══██╗╚██╗░██╔╝╚██╗░██╔╝██║░░░██║██╔══██╗██╔══██╗"
-echo -e "███████║██╔██╗██║██║░░██║░╚████╔╝░░╚████╔╝░██║░░░██║██║░░██║███████║"
-echo -e "██╔══██║██║╚████║██║░░██║░░╚██╔╝░░░░╚██╔╝░░██║░░░██║██║░░██║██╔══██║"
-echo -e "██║░░██║██║░╚███║██████╔╝░░░██║░░░░░░██║░░░╚██████╔╝██████╔╝██║░░██║"
-echo -e "╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░░░░╚═╝░░░░╚═════╝░╚═════╝░╚═╝░░╚═╝"
-echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │                  ${BIWhite}${UWhite}ANDYYUDA TUNELING${NC}"
+echo -e "${BICyan} │                  ${BIWhite}${UWhite}SANVPN TUNELING${NC}"
 echo -e "${BICyan} │"
 echo -e " ${BICyan}│  ${BICyan}Use Core        :  ${BIPurple}XRAY${NC}"
 echo -e " ${BICyan}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 
-echo -e "${GREEN}INGATLAH KAWAN DILANGIT MASIH ADA LANGIT JAGAN LUPA DIRI${NC}" 
+echo -e "${GREEN}  INGATLAH KAWAN DILANGIT MASIH ADA LANGIT JAGAN LUPA DIRI${NC}" 
 
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
-echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
+echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma          $vla          $tra $NC" 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
   
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${BICyan}[${BIWhite}06${BICyan}] GANTI PW     ${BICyan}[${BIYellow}VPS${BICyan}]${NC}" "${BICyan}   │"
+echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${BICyan}[${BIWhite}06${BICyan}] GANTI PW    ${BICyan}[${BIYellow}VPS${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}07${BICyan}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${NC}" "${BICyan}     │"
 echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] RUNNING             │"
 echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] INSTAL UDP${BICyan}[${BIYellow}INSTAL${BICyan}]${NC}" "${BICyan} │${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "${BICyan}                  MENU TAMBAHAN${NC} "
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "     ${BICyan}[${BIWhite}11${BICyan}] DOMAIN FREE${NC} "
-echo -e "     ${BICyan}[${BIWhite}12${BICyan}] UPDATE MENU${NC} "
-echo -e "     ${BICyan}[${BIWhite}13${BICyan}] GANTI NS DOMAIN${NC} "
-echo -e "     ${RED}[${BIWhite}14${RED}] LOCK AKUN SSH${NC} "
-echo -e "     ${RED}[${BIWhite}15${RED}] UNLOCK AKUN SSH${NC} "
-echo -e "     ${BICyan}[${BIWhite}16${BICyan}] CLEAR SAMPAH${NC} "
-echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
+echo -e "     ${BICyan}[${BIWhite}11${BICyan}] Panel BOT     ${BICyan}[${BIYellow}Install${BICyan}]${NC}"
+echo -e "     ${BICyan}[${BIWhite}12${BICyan}] lock ssh "
+echo -e "     ${BICyan}[${BIWhite}13${BICyan}] unlock ssh "
+echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Update Script " 
+echo -e "     ${BICyan}[${BIWhite}15${BICyan}] Menu SLOWDNS " 
+echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e "\E[44;1;39m                     ⇱ AndyVpn Store ⇲                         \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │$NC ${BICyan}HARI ini${NC}: ${red}$ttoday$NC ${BICyan}KEMARIN${NC}: ${red}$tyest$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
+DATE=$(date +'%d %B %Y')
+datediff() {
+    d1=$(date -d "$1" +%s)
+    d2=$(date -d "$2" +%s)
+    echo -e " ${BICyan}│$NC  Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
+}
+mai="datediff "$Exp" "$DATE""
 echo -e " ${BICyan}┌─────────────────────────────────────┐${NC}"
-echo -e " ${BICyan}│  Version      ${NC} : v3. Last Update"
+echo -e " ${BICyan}│  Version      ${NC} : v4. Last Update"
 echo -e " ${BICyan}│  User       ${NC}   :\033[1;36m $Name \e[0m"
-echo -e " ${BICyan}│  Expiry script${NC} : ${BIYellow}$Exp${NC} Days"
+if [ $exp \< 1000 ];
+then
+echo -e "   $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+else
+    datediff "$Exp" "$DATE"
+fi;
 echo -e " ${BICyan}└─────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
@@ -333,12 +338,10 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-11) clear ; cf ;;
-12) clear ; up ;;
-13) clear ; slow ;;
-14) clear ; user-lock ;;
-15) clear ; user-unlock ;;
-16) clear ; clearcache ;;
+11) clear ; xolpanel ;;
+12) clear ; lock ;;
+13) clear ; unlock ;;
+14) clear ; update ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
