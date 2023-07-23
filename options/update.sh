@@ -124,6 +124,9 @@ wget -q -O /usr/bin/certxray "https://raw.githubusercontent.com/Sandhj/v5/main/m
 wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/Sandhj/v5/main/menu/menu-set.sh"
 wget -q -O /usr/bin/info "https://raw.githubusercontent.com/Sandhj/v5/main/options/info.sh"
 wget -q -O /usr/bin/infoserv "https://raw.githubusercontent.com/Sandhj/v5/main/options/infoserv.sh"
+wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Sandhj/xolpanel/main/xolpanel.sh"
+wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/Sandhj/v5/main/user-lock.sh"
+wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/Sandhj/v5/main/user-unlock.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
@@ -152,6 +155,9 @@ chmod +x /usr/bin/certxray
 chmod +x /usr/bin/menu-set
 chmod +x /usr/bin/info
 chmod +x /usr/bin/infoserv
+chmod +x /usr/bin/xolpanel
+chmod +x /usr/bin/lock
+chmod +x /usr/bin/unlock
 clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
