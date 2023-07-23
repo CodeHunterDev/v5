@@ -2,7 +2,6 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition V1.0
-# Author  : Wings Premium VPN
 # (C) Copyright 2023
 # =========================================
 
