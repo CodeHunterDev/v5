@@ -340,7 +340,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m          ⇱ SCRIPT BY @SANVPN ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 sleep 1
-wget -q https://raw.githubusercontent.com/Sandhj/v5/main/tools/andysc.sh && chmod +x andysc.sh && ./andysc.sh
+wget -q https://raw.githubusercontent.com/Sandhj/v5/main/tools/arzsource.sh && chmod +x arzsource.sh && ./arzsource.sh
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Install Ssh-vpn ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
