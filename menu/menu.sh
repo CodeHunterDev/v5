@@ -299,9 +299,8 @@ echo -e "     ${BICyan}[${BIWhite}11${BICyan}] Panel BOT     ${BICyan}[${BIYello
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] lock ssh "
 echo -e "     ${BICyan}[${BIWhite}13${BICyan}] unlock ssh "
 echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Update Script " 
-echo -e "     ${BICyan}[${BIWhite}15${BICyan}] Menu SLOWDNS " 
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "\E[44;1;39m                     ⇱ AndyVpn Store ⇲                         \E[0m"
+echo -e "\E[44;1;39m                     ⇱ SANVPN Store ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
