@@ -488,7 +488,7 @@ case $opt in
 2) clear ; trialvmess ;;
 3) clear ; delws ;;
 4) clear ; renewws;;
-5) clear ; cekws ;;
+5) clear ; cek-ws ;;
 6) clear ; detailvmess ;;
 0) clear ; menu ;;
 x) exit ;;
