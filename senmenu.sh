@@ -34,6 +34,10 @@ wget -q -O /usr/bin/infoserv "https://raw.githubusercontent.com/Sandhj/v5/main/o
 wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Sandhj/xolpanel/main/xolpanel.sh"
 wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/Sandhj/v5/main/user-lock.sh"
 wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/Sandhj/v5/main/user-unlock.sh"
+wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/Sandhj/v5/main/xray/trialvless.sh"
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/Sandhj/v5/main/xray/del-vless.sh"
+wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/Sandhj/v5/main/xray/renew-vless.sh"
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Sandhj/v5/main/xray/cek-vless.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
@@ -65,3 +69,7 @@ chmod +x /usr/bin/infoserv
 chmod +x /usr/bin/xolpanel
 chmod +x /usr/bin/lock
 chmod +x /usr/bin/unlock
+chmod +x /usr/bin/trialvless
+chmod +x /usr/bin/del-vless
+chmod +x /usr/bin/renew-vless
+chmod +x /usr/bin/cek-vless
