@@ -375,10 +375,10 @@ echo -e ""
 case $opt in
 1) clear ; add-vless ;;
 2) clear ; trialvless ;;
-3) clear ; delws;;
+3) clear ; delws ;;
 4) clear ; renewws ;;
-5) clear ; cekws;;
-6) clear ; detailvless;;
+5) clear ; cekws ;;
+6) clear ; detailvless ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
