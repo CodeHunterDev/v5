@@ -127,6 +127,7 @@ wget -q -O /usr/bin/infoserv "https://raw.githubusercontent.com/Sandhj/v5/main/o
 wget -q -O /usr/bin/xolpanel "https://raw.githubusercontent.com/Sandhj/xolpanel/main/xolpanel.sh"
 wget -q -O /usr/bin/lock "https://raw.githubusercontent.com/Sandhj/v5/main/user-lock.sh"
 wget -q -O /usr/bin/unlock "https://raw.githubusercontent.com/Sandhj/v5/main/user-unlock.sh"
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/Sandhj/v5/main/xray/user-unlock.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
