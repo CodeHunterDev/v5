@@ -362,7 +362,7 @@ case $opt in
 1) clear ; add-tr ;;
 2) clear ; trialtrojan ;;
 3) clear ; delws ;;
-4) clear ; renewws;;
+4) clear ; renewws ;;
 5) clear ; cekws ;;
 6) clear ; detailtrojan ;;
 0) clear ; menu ;;
